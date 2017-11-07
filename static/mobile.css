@@ -1,0 +1,23 @@
+@media only screen and (max-width: 1024px) {
+	.w40, .w60 {
+	    width: calc(100% - 50px);
+	}
+	header.w60 {
+	    margin-left: auto;
+	    width: calc(100% - 80px);
+	}
+	header ul li{
+		font-size:6vw;
+	}
+	h3{
+		font-size:6.5vw;
+	}
+	.intro.w40 span.dot{
+	  -webkit-animation: dotAnime 2s ease-in-out infinite;
+	  -moz-animation: dotAnime 2s ease-in-out infinite;
+	  -ms-animation: dotAnime 2s ease-in-out infinite;
+	  -o-animation: dotAnime 2s ease-in-out infinite;
+	  animation: dotAnime 2s ease-in-out infinite;
+	}
+    
+}
