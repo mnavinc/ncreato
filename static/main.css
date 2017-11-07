@@ -9,91 +9,188 @@ html, body{
 body{
 	font-family: 'Open Sans', sans-serif;
 	font-size:16px;
-	line-height:1;
+	line-height:1.2;
 	margin:auto;
 	padding:0;
-	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-color:#000;
+	color:#FFF;
+	letter-spacing: 1;
+	width:100%;
+	height:100%;
+	/*background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;*/
 }
+/*.bg-inverse{
+	background-color:#000;
+}*/
 .wrapper{
-	display:table;
-	width:100%;
+	height:calc(100% - 40px);
+	padding:20px;
+}
+.fullBlock{
 	height:100%;
+	width:100%;
+}
+.text-center{
+	text-align:center;
+}
+.text-left{
+	text-align:left;
+}
+.text-right{
+	text-align:right;
 }
 h1{
+    font-size: 5vw;/*45px*/
+}
+h2{
+	font-size: 4vw;/*35px*/
+}
+h3{
+	font-size: 3vw;/*30px*/
+}
+h4{
+	font-size: 2vw;/*25px*/
+}
+h5{
+	font-size: 1vw;/*20px*/
+}
+h6{
+    font-size: 1vw;/*16px*/
+}
+.f-bold{
+	font-weight:900;
+}
+.f-light{
+	font-weight:100;
+}
+.f-color{
+	color:#F00;
+}
+.border5{
+	border-width:5px;
+	border-style:solid;
+}
+.border-red{
+	border-color:#F00;
+}
+.border{
+	border-color:#000;
+}
+.table{
+	display:inline-table;
+}
+.table .table-cell{
 	display:table-cell;
 	vertical-align: middle;
-	margin:auto 20px;
-	text-align: center;
-	color:#fff;
-	font-weight:lighter;
-	font-size:27px;
-	opacity:1;
-	line-height:1.4;
 }
-h1 .con{
-	width:100%;
-	display:inline-block;
+.red-shadow{
+	text-shadow: 2px 2px 0px #800;
 }
-h1 .con:after {
-	overflow: hidden;
-	display: inline-block;
-	vertical-align: bottom;
-	-webkit-animation: ellipsis steps(4,end) 900ms infinite;      
-	animation: ellipsis steps(4,end) 900ms infinite;
-	content: "\2026";
-	width: 0px;
-	position: absolute;
+canvas{
+    position: fixed;
+    z-index: -1;
+}
+.fa{
+	cursor:pointer;
+}
+.blockPadding{
+	padding:20px;
+	border-radius:5px;
+}
+.w60{
+	width:60%;
+	margin:auto;
+}
+.w40{
+	width:40%;
+	margin:auto;
+}
+.border-rad{
+	border-radius:5px;
+}
+.trans3D{
+    background: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px #333;
+}
+header.w60 {
+    position: fixed;
+    margin-left: calc(20% - 40px);
+    color:#F00;
+    z-index:9;
+}
+header:hover{
+	background-color:#F00;
+	color:#000;
+}
+header ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 2vw;
+    width: calc(50% - 2.5px);
+    margin: auto;
+}
+header ul li:last-child{
+	text-align:right;
+}
+div{
+	position:relative;
+}
+span.dot {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #F00;
+    top:-7.5%;
+    left:0;
+    box-shadow: 0px 0px 1px 2px #F00
+}
+.intro.w40:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  padding-right: 5px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 5px solid #F00;
+  border-right: 5px solid #F00;
+  visibility: hidden;
+  -webkit-animation: bottomright 0.5s ease-in-out forwards;
+  -moz-animation: bottomright 0.5s ease-in-out forwards;
+  -ms-animation: bottomright 0.5s ease-in-out forwards;
+  -o-animation: bottomright 0.5s ease-in-out forwards;
+  animation: bottomright 0.5s ease-in-out forwards;
 }
 
-@keyframes ellipsis {
-  to {
-    width: 1.25em;    
-  }
+.intro.w40:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  padding-left: 5px;
+  width: 100%;
+  height: 100%;
+  border-top: 5px solid #F00;
+  border-left: 5px solid #F00;
+  visibility: hidden;
+  -webkit-animation: topleft 0.5s ease-in-out forwards;
+  -moz-animation: topleft 0.5s ease-in-out forwards;
+  -ms-animation: topleft 0.5s ease-in-out forwards;
+  -o-animation: topleft 0.5s ease-in-out forwards;
+  animation: topleft 0.5s ease-in-out forwards;
+}
+.intro.w40:hover span.dot{
+  -webkit-animation: dotAnime 2s ease-in-out infinite;
+  -moz-animation: dotAnime 2s ease-in-out infinite;
+  -ms-animation: dotAnime 2s ease-in-out infinite;
+  -o-animation: dotAnime 2s ease-in-out infinite;
+  animation: dotAnime 2s ease-in-out infinite;
 }
 
-@-webkit-keyframes ellipsis {
-  to {
-    width: 1.25em;    
-  }
-}
 
-
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
