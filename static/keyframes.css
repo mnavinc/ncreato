@@ -1,23 +1,23 @@
 @keyframes dotAnime{
 	0%{
-		left:-1.75%;
-		top:-7.5%;
+		left:calc(0% - 7.5px);
+		top:calc(0% - 7.5px);
 	}
 	25%{
-		left:99%;
-		top:-7.5%;
+		left:calc(100% - 2.5px);
+		top:calc(0% - 7.5px);
 	}
 	50%{
-		left:99%;
-		top:97.5%;
+		left:calc(100% - 2.5px);
+		top:calc(100% - 2.5px);
 	}
 	75%{
-		left:-1.75%;
-		top:97.5%;
+		left:calc(0% - 7.5px);
+		top:calc(100% - 2.5px);
 	}
 	100%{
-		left:-1.75%;
-		top:0%;
+		left:calc(0% - 7.5px);
+    top:calc(0% - 7.5px);
 	}
 }
 @keyframes bottomright {
@@ -139,5 +139,20 @@
     height: 0;
     padding-bottom: 0;
     visibility: hidden;
+  }
+}
+
+@keyframes cycle-colors {
+  0% { border-color: hsl(0, 100%, 50%); }
+  25% { border-color: hsl(90, 100%, 50%); }
+  50% { border-color: hsl(180, 100%, 50%); }
+  75% { border-color: hsl(270, 100%, 50%); }
+  100% { border-color: hsl(360, 100%, 50%); }
+}
+
+@keyframes pulse {
+  to {
+    opacity: 0;
+    transform: scale(1);
   }
 }

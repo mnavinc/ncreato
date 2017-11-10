@@ -15,11 +15,11 @@ var characterList = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
 
 //stocks possible character attributes
 var layers = {
-    n: 5, //number of layers
+    n: 4, //number of layers
     letters: [100, 40, 30, 20, 10], //letters per layer (starting from the deepest layer)
     coef: [0.1, 0.2, 0.4, 0.6, 0.8], //how much the letters move from the mouse (starting from the deepest layer)
     size: [16, 22, 36, 40, 46], //font size of the letters (starting from the deepest layer)
-    color: ['#e2e3e5', '#ddd', '#ccc', '#bbb', '#aaa'], //color of the letters (starting from the deepest layer)
+    color: ['#ddd', '#ccc', '#bbb', '#aaa'], //color of the letters (starting from the deepest layer)
     font: 'Courier' //font family (of every layer)
 };
 
