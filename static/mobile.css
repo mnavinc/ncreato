@@ -1,4 +1,15 @@
 @media only screen and (max-width: 1024px) {
+	html,body{
+		overflow:auto;
+		background-color:#FFF;
+	}
+	.wrapper{
+		width:100%;
+		height:100%;
+	}
+	.blockPadding {
+	    padding: 10px;
+	}
 	.w40, .w60 {
 	    width: calc(100% - 50px);
 	}
@@ -12,12 +23,62 @@
 	h3{
 		font-size:6.5vw;
 	}
-	.intro.w40 span.dot{
-	  -webkit-animation: dotAnime 2s ease-in-out infinite;
-	  -moz-animation: dotAnime 2s ease-in-out infinite;
-	  -ms-animation: dotAnime 2s ease-in-out infinite;
-	  -o-animation: dotAnime 2s ease-in-out infinite;
-	  animation: dotAnime 2s ease-in-out infinite;
+	section.sidebar {
+	    width: 100%;
+	    position: relative;
+	    float: none;
+	    display:none;
 	}
+	section.sidebar ul {
+	    display: none;
+	}
+	section.sidebar p.footer{
+		display:none;
+	}
+	section.content{
+		width:100%;
+		margin:auto;
+		overflow: hidden;
+		overflow-y:auto;
+		height: calc(100% - 60px);
+	}
+	.about .myPic {
+	    clear: both;
+	    float: none;
+	    margin: auto;
+	}
+	.about .info{
+	    clear: both;
+	    float: none;
+	    width: 100%;
+	    padding: 10px;
+	    margin: 30px auto;
+	    background-color: #FFF;
+	    border-radius: 10px;
+	}
+	.port {
+	    margin: 0.5rem;
+	}
+	.avatar.mob {
+	    display: block;
+	    margin-bottom: 20px;
+	}
+	.tabs.mob{
+		display:block;
+		width:100%;
+		position:relative;
+		background-color:#FFF;
+	}
+	.tabs li {
+	    display: inline-block;
+	    width: calc(25% - 5px);
+	    text-align: center;
+	    margin: auto;
+	    padding: 20px;
+	}
+	.tabs li span{
+		display:none;
+	}
+
     
 }

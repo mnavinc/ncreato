@@ -143,7 +143,7 @@
             }
 
             Y.on("domready", function(e) {
-                Y.one("body").setStyle("paddingBottom", Y.one("#in").get("offsetHeight"));
+                //Y.one("body").setStyle("paddingBottom", Y.one("#in").get("offsetHeight"));
                 Y.one("#in").on("keydown", function(e) {
                     var i;
                     var n = inputArray.length-1;

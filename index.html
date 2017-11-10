@@ -54,6 +54,9 @@
 			<section class="content">
 				<div class="fullBlock table" id="home">
 					<div class="table-cell">
+						<div class="avatar mob border w60">
+						  <a href="#home"><img src="static/images/logo4.jpg" alt="Frontend Engineer"></a>
+						</div>
 						<div class="intro border blockPadding w60">
 							<span class="dot"></span>
 							<h3 class="f-bold f-color text-center bg-inverse">I've been expecting you.</h3>
@@ -66,7 +69,7 @@
 						<h1>ABOUT</h1>
 						<div class="about">
 							<div class="myPic">
-								<img src="static/images/logo3.jpg" alt="Frontend Engineer">
+								<img src="static/images/logo2.jpg" alt="ncreato">
 							</div>
 							<div class="info">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum libero in tellus imperdiet auctor. Suspendisse vitae consequat tellus. Vivamus condimentum aliquam lectus id porttitor. Sed venenatis est ligula. Pellentesque sollicitudin libero at eros aliquam tristique. Nunc varius quam at purus accumsan consequat. Duis dapibus sapien quis accumsan aliquam. Donec gravida, velit in varius pellentesque, enim risus posuere velit, non finibus metus augue nec nisl. Praesent efficitur erat quis nulla consectetur consequat. Maecenas lacinia in odio eget rutrum. Quisque turpis magna, lobortis et mi sed, aliquet feugiat augue. Cras ullamcorper lectus in ex interdum elementum. Nulla iaculis pharetra metus, non commodo purus sagittis in.</p>
@@ -170,7 +173,7 @@
 					        <div id="out">
 					        </div>
 					        <form class="output">
-					            <input type="text" id="in" placeholder="Type your command:" autofocus list="commandList"/>
+					            <input type="text" id="in" placeholder="Type your command:" list="commandList"/>
 					            <datalist id="commandList">
 					                <select>
 					                    <option value="name" />
@@ -188,11 +191,21 @@
 					</div>
 				</div>
 			</section>
-
+			<ul class="tabs mob">
+				<a href="#about"><li><i class="fa fa-lg fa-user"></i>&nbsp;<span>About</span></li></a>
+				<a href="#expert"><li><i class="fa fa-lg fa-cubes"></i>&nbsp;<span>Expertise</span></li></a>
+				<a href="#portfolio"><li><i class="fa fa-lg fa-briefcase"></i>&nbsp;<span>Portfolio</span></li></a>
+				<a href="#talk"><li><i class="fa fa-lg fa-handshake-o"></i>&nbsp;<span>Lets Talk</span></li></a>
+			</ul>
 	</main>
 </body>
 <script type="text/javascript" src="static/canvas.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://yui.yahooapis.com/combo?3.5.0/build/yui/yui-min.js"></script>
 <script type="text/javascript" src="static/console.js"></script>
+<script>
+// $(document).ready(function(){
+//   $('html,body').animate({scrollTop:$(location.hash).offset().‌​top}, 2000);
+// });
+</script>
 </html>
