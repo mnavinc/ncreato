@@ -23,6 +23,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<script type="text/javascript" src="static/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="static/owl.carousel.min.css?v1">
+	<link rel="stylesheet" type="text/css" href="static/owl.theme.default.min.css?v1">
 	<link rel="stylesheet" type="text/css" href="static/keyframes.css?v1">
 	<link rel="stylesheet" type="text/css" href="static/main.css?v1">
 	<link rel="stylesheet" type="text/css" href="static/mobile.css?v1">
@@ -44,8 +46,8 @@
 				  <a href="#home"><img src="static/images/logo4.jpg" alt="Frontend Engineer"></a>
 				</div>
 				<ul class="menu">
-					<a href="#about"><li><i class="fa fa-lg fa-user"></i>&nbsp;About</li></a>
-					<a href="#expert"><li><i class="fa fa-lg fa-cubes"></i>&nbsp;Expertise</li></a>
+					<a href="#about"><li><i class="fa fa-lg fa-user-circle"></i>&nbsp;About</li></a>
+					<a href="#expert"><li><i class="fa fa-lg fa-tasks"></i>&nbsp;Expertise</li></a>
 					<a href="#portfolio"><li><i class="fa fa-lg fa-briefcase"></i>&nbsp;Portfolio</li></a>
 					<a href="#talk"><li><i class="fa fa-lg fa-handshake-o"></i>&nbsp;Lets Talk</li></a>
 				</ul>
@@ -66,7 +68,7 @@
 				</div>
 				<div class="fullBlock table" id="about">
 					<div class="table-cell">
-						<h1>ABOUT</h1>
+						<h1 class="title text-right">ABOUT</h1>
 						<div class="about">
 							<div class="myPic">
 								<img src="static/images/logo2.jpg" alt="ncreato">
@@ -80,10 +82,55 @@
 				</div>
 				<div class="fullBlock table" id="expert">
 					<div class="table-cell">
-						<h1>EXPERT IN</h1>
+						<h1 class="title text-right">EXPERT IN</h1>
 						<div class="skillset">
-							<div class="cols">
+							<div class="cols owl-carousel">
 								<div class="col" ontouchstart="this.classList.toggle('hover');">
+					                <div class="container">
+					                    <div class="front" style="background-image: url(https://unsplash.it/500/500/)">
+					                        <div class="inner">
+					                            <p>Diligord</p>
+					              				<span>Lorem ipsum</span>
+					                        </div>
+					                    </div>
+					                    <div class="back">
+					                        <div class="inner">
+					                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+					                        </div>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="col" ontouchstart="this.classList.toggle('hover');">
+					                <div class="container">
+					                    <div class="front" style="background-image: url(https://unsplash.it/500/500/)">
+					                        <div class="inner">
+					                            <p>Diligord</p>
+					              				<span>Lorem ipsum</span>
+					                        </div>
+					                    </div>
+					                    <div class="back">
+					                        <div class="inner">
+					                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+					                        </div>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="col" ontouchstart="this.classList.toggle('hover');">
+					                <div class="container">
+					                    <div class="front" style="background-image: url(https://unsplash.it/500/500/)">
+					                        <div class="inner">
+					                            <p>Diligord</p>
+					              				<span>Lorem ipsum</span>
+					                        </div>
+					                    </div>
+					                    <div class="back">
+					                        <div class="inner">
+					                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+					                        </div>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="col" ontouchstart="this.classList.toggle('hover');">
 					                <div class="container">
 					                    <div class="front" style="background-image: url(https://unsplash.it/500/500/)">
 					                        <div class="inner">
@@ -134,7 +181,7 @@
 				</div>
 				<div class="fullBlock table" id="portfolio">
 					<div class="table-cell">
-						<h1>PORTFOLIO</h1>
+						<h1 class="title text-right">PORTFOLIO</h1>
 						<div class="gallery">
 							<div class="cols">
 								<figure class="port">
@@ -167,7 +214,7 @@
 				</div>
 				<div class="fullBlock table" id="talk">
 					<div class="table-cell">
-						<h1>LETS TALK</h1>
+						<h1 class="title text-right">LETS TALK</h1>
 						<div class="console">
 							<p class="help"><i class="fa fa-lg fa-info-circle"></i> Use "help" to show sample questions.</p>
 					        <div id="out">
@@ -201,11 +248,34 @@
 </body>
 <script type="text/javascript" src="static/canvas.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="http://yui.yahooapis.com/combo?3.5.0/build/yui/yui-min.js"></script>
+<script src="static/owl.carousel.min.js"></script>
+<script type="text/javascript" type="text/javascript" src="http://yui.yahooapis.com/combo?3.5.0/build/yui/yui-min.js"></script>
 <script type="text/javascript" src="static/console.js"></script>
 <script>
 // $(document).ready(function(){
 //   $('html,body').animate({scrollTop:$(location.hash).offset().‌​top}, 2000);
 // });
+$('.owl-carousel').owlCarousel({
+    //loop:true,
+    stagePadding: 10,
+    margin:20,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:false
+        }
+    },
+    navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
+})
 </script>
 </html>
