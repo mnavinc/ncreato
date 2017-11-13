@@ -83,7 +83,7 @@
 									<img src="static/images/logo2.jpg" alt="ncreato">
 								</div>
 								<div class="info">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum libero in tellus imperdiet auctor. Suspendisse vitae consequat tellus. Vivamus condimentum aliquam lectus id porttitor. Sed venenatis est ligula. Pellentesque sollicitudin libero at eros aliquam tristique. Nunc varius quam at purus accumsan consequat. Duis dapibus sapien quis accumsan aliquam. Donec gravida, velit in varius pellentesque, enim risus posuere velit, non finibus metus augue nec nisl.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum libero in tellus imperdiet auctor. Suspendisse vitae consequat tellus. Vivamus condimentum aliquam lectus id porttitor. Sed venenatis est ligula. Pellentesque sollicitudin libero at eros aliquam tristique.</p>
 								</div>
 							</div>
 						</div>
@@ -301,7 +301,7 @@
 			</section>
 			<ul class="tabs mob">
 				<a href="#home"><li><i class="fa fa-lg fa-home"></i>&nbsp;<span>Home</span></li></a>
-				<a href="#about"><li><i class="fa fa-lg fa-user"></i>&nbsp;<span>About</span></li></a>
+				<a href="#about"><li><i class="fa fa-lg fa-user-circle"></i>&nbsp;<span>About</span></li></a>
 				<a href="#expert"><li><i class="fa fa-lg fa-tasks"></i>&nbsp;<span>Expertise</span></li></a>
 				<a href="#portfolio"><li><i class="fa fa-lg fa-briefcase"></i>&nbsp;<span>Portfolio</span></li></a>
 				<a href="#talk"><li><i class="fa fa-lg fa-handshake-o"></i>&nbsp;<span>Lets Talk</span></li></a>
@@ -356,12 +356,12 @@ $(".content").scroll(function() {
     console.log(scrollDistance);
     
     $('.fullBlock').each(function(i) {
-            if ($(this).position().top <= scrollDistance) {
-                    $('.menu a.active').removeClass('active');
-                    $('.menu a').eq(i).addClass('active');
-                    $('ul.tabs a.active').removeClass('active');
-                    $('ul.tabs a').eq(i).addClass('active');
-            }
+        if ($(this).position().top <= scrollDistance) {
+            $('.menu a.active').removeClass('active');
+            $('.tabs a.active').removeClass('active');
+            $('.menu a').eq(i).addClass('active');
+            $('.tabs a').eq(i).addClass('active');
+        }
     });
 }).scroll();
 </script>
