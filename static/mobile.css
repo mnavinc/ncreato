@@ -107,14 +107,17 @@
 	.owl-nav div.disabled {
 	    background-color:#dadada;
 	}
+	.avatar:hover {
+	    transform: translate3d(0px,0px,0px);
+	    box-shadow: none;
+	}
 	[draggable=true] {
 	    cursor: move;
 	}
-
 	.resizable {
 	    overflow: scroll;
 	    resize: both;
-	    max-width: 300px;
-	    max-height: 460px;
+	    /*max-width: 300px;
+	    max-height: 460px;*/
 	}
 }
