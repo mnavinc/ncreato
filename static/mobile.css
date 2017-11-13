@@ -42,10 +42,17 @@
 		overflow-y:auto;
 		height: calc(100% - 60px);
 	}
+	.about{
+	  margin:auto;
+	  background-color: rgba(0,0,0,0.5);
+	  padding: 20px 20px 0;
+	  border-radius: 10px;
+	  width: 90%;
+	}
 	.about .myPic {
 	    clear: both;
 	    float: none;
-	    margin: auto;
+	    margin: 20px auto;
 	}
 	.about .info{
 	    clear: both;
@@ -68,6 +75,7 @@
 		width:100%;
 		position:relative;
 		background-color:#FFF;
+		background-color:rgba(255,255,255,0.75);
 	}
 	.tabs li {
 	    display: inline-block;
@@ -76,9 +84,30 @@
 	    margin: auto;
 	    padding: 20px;
 	}
+	.tabs li:hover,
+	.tabs li.active,
+	.tabs li:active,
+	.tabs li:focus {
+	    background-color: #102228;
+	    color: #FFF;
+	}
 	.tabs li span{
 		display:none;
 	}
-
-    
+	.skillset,.gallery{
+	  width: 100%;
+	  margin: 0 auto;
+	}
+	/*.owl-nav {
+	  position: absolute;
+	  top: 38%;
+	  width: 100%;
+	  left: 0px;
+	}
+	.owl-prev{
+	  left:0px;
+	}
+	.owl-next{
+	  right:0px;
+	}*/
 }
