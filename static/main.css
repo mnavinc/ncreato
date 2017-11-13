@@ -14,7 +14,6 @@ body{
 	line-height:1.2;
 	margin:auto;
 	padding:0;
-	/*background-color:#FFF;*/
 	color:#102228;
 	letter-spacing: 1;
 	width:100%;
@@ -22,8 +21,8 @@ body{
   perspective: 1000px;
   transform-style: preserve-3d;
   transform:translateZ(0);
-	/*background: linear-gradient(-45deg, #D2D3D5, #E2E3E5, #F2F3F5);*/
-  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background: linear-gradient(-45deg, #D2D3D5, #E2E3E5, #F2F3F5);
+  /*background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);*/
       /*background: #403B4A;
       background: -webkit-linear-gradient(45deg, #E7E9BB, #403B4A); 
       background: linear-gradient(45deg, #E7E9BB, #403B4A);*/
