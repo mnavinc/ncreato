@@ -40,7 +40,7 @@
 		margin:auto;
 		overflow: hidden;
 		overflow-y:auto;
-		height: calc(100% - 60px);
+		height: calc(100% - 64px);
 	}
 	.about{
 	  margin:auto;
@@ -75,12 +75,12 @@
 		width:100%;
 		position:relative;
 		background-color:#FFF;
-		box-shadow: 0px 0px 12px #333;
+		/*box-shadow: 0px 0px 12px #333;*/
 		/*background-color:rgba(255,255,255,0.75);*/
 	}
 	.tabs li {
 	    display: inline-block;
-	    width: calc(25% - 5px);
+	    width: calc(20% - 5px);
 	    text-align: center;
 	    margin: auto;
 	    padding: 20px;
@@ -96,7 +96,7 @@
 		display:none;
 	}
 	.owl-nav {
-	  top: 38%;
+	  top: 45%;
 	  display:block;
 	}
 	.owl-prev{
@@ -113,24 +113,21 @@
 	    box-shadow: none;
 	}
 	h1.title {
-	    width: 100%;
-	    position: absolute;
-	    top: 0;
-	    left: 0;
-	    margin: auto;
-	    background-color: #FFF;
-	    padding: 15px;
-	    z-index:99;
-	    box-shadow: 0px 0px 12px #333;
+	    width: 90%;
+    	position: relative;
+    	top: 0;
+    	left: 0;
+    	margin: auto;
+    	/* background-color: #FFF; */
+    	padding: 15px;
+    	z-index: 99;
+    	text-shadow: 2px 2px 5px #ccc;
+    	/* box-shadow: 0px 0px 12px #333; */
 	}
-	h1.title i.fa {
-	    position: absolute;
-	    left: 0;
-	    display: inline-block;
-	    padding: 0 25px;
-	    border-right: 1px solid #102228;
-	    height: 100%;
-	    top: 0;
-	    line-height: 2;
+	/*section.content{
+		overflow-y:hidden;
 	}
+	.fullBlock{
+		overflow-y:auto;
+	}*/
 }

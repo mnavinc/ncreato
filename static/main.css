@@ -338,8 +338,8 @@ section.sidebar p.footer span{
 
 .col{
   /*width: calc(25% - 2rem);*/
-  width:100%;
-  margin:10px;
+  width:80%;
+  margin:auto;
   cursor: pointer;
 }
 .owl-carousel .owl-stage-outer{
@@ -382,12 +382,19 @@ section.sidebar p.footer span{
 .owl-next{
   right:-10px;
 }
+.owl-item.center{
+  transform: scale(1.2);
+  z-index:99;
+}
 
 .container{
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 1000px;
           perspective: 1000px;
+}
+.owl-carousel .owl-stage{
+  margin:40px auto;
 }
 
 .front,
@@ -530,8 +537,8 @@ section.sidebar p.footer span{
 
 @media screen and (max-width: 32rem){
   .col{
-    width: 100%;
-    margin: 0 0 2rem 0;
+    width: 80%;
+    margin: auto;
   }
 }
 
@@ -543,8 +550,7 @@ section.sidebar p.footer span{
     overflow: hidden;
     min-width: 300px;
     max-height: 220px;
-    width: 100%;
-    margin: 20px auto;
+    width: 80%;
     color: #000000;
     text-align: right;
     font-size: 16px;
@@ -569,10 +575,10 @@ section.sidebar p.footer span{
   opacity: 1;
   padding: 30px 0 30px 10px;
   background-color: #ffffff;
-  width: 40%;
+  width: calc(40% - 2px);
   -webkit-transform: translateX(150%);
   transform: translateX(150%);
-  outline:0;
+  border: 1px solid transparent;
 }
 .port figcaption:before {
   position: absolute;
@@ -586,7 +592,6 @@ section.sidebar p.footer span{
   border-style: solid;
   border-width: 120px 120px 120px 0;
   border-color: transparent #ffffff transparent transparent;
-  outline:none;
 }
 .port:after {
   position: absolute;
@@ -602,7 +607,6 @@ section.sidebar p.footer span{
   transform: translateY(-50%);
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
-  outline:0;
 }
 .port h3,
 .port p {
@@ -762,7 +766,4 @@ section.sidebar p.footer span{
 h1.title{
   width:60%;
   margin:auto;
-}
-h1.title i.fa{
-  display:none;
 }
