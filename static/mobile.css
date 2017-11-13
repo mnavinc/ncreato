@@ -40,7 +40,7 @@
 		margin:auto;
 		overflow: hidden;
 		overflow-y:auto;
-		height: calc(100% - 64px);
+		height: calc(100% - 63px);
 	}
 	.about{
 	  margin:auto;
