@@ -29,6 +29,7 @@
 	<link rel="stylesheet" type="text/css" href="static/keyframes.css?v1">
 	<link rel="stylesheet" type="text/css" href="static/main.css?v1">
 	<link rel="stylesheet" type="text/css" href="static/mobile.css?v1">
+	<!-- <link rel="stylesheet" type="text/css" href="static/jquery.fullpage.min.css"> -->
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -46,7 +47,7 @@
 				<!-- <div class="avatar">
 				  <a><img src="static/images/logo4.jpg" alt="Frontend Engineer"></a>
 				</div> -->
-				<ul class="menu">
+				<ul class="menu nav">
 					<a href="#home"><li>
 						<div class="avatar">
 						  <img src="static/images/logo4.jpg" alt="Frontend Engineer">
@@ -299,8 +300,8 @@
 					</div>
 				</div>
 			</section>
-			<ul class="tabs mob">
-				<a href="#home"><li><i class="fa fa-lg fa-home"></i>&nbsp;<span>Home</span></li></a>
+			<ul class="tabs nav mob">
+				<a href="#home" class="active"><li><i class="fa fa-lg fa-home"></i>&nbsp;<span>Home</span></li></a>
 				<a href="#about"><li><i class="fa fa-lg fa-user-circle"></i>&nbsp;<span>About</span></li></a>
 				<a href="#expert"><li><i class="fa fa-lg fa-tasks"></i>&nbsp;<span>Expertise</span></li></a>
 				<a href="#portfolio"><li><i class="fa fa-lg fa-briefcase"></i>&nbsp;<span>Portfolio</span></li></a>
@@ -310,6 +311,7 @@
 </body>
 <script type="text/javascript" src="static/canvas.js"></script>
 <script src="static/owl.carousel.min.js"></script>
+<!-- <script src="static/jquery.fullpage.extensions.min.js"></script> -->
 <!-- <script type="text/javascript" type="text/javascript" src="http://yui.yahooapis.com/combo?3.5.0/build/yui/yui-min.js"></script>
 <script type="text/javascript" src="static/console.js"></script> -->
 <script>
@@ -335,34 +337,53 @@ $('.owl-carousel').owlCarousel({
     navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
 });
 $(document).ready(function() {
-    $('a[href*=\\#]:not([href=\\#])').bind('click', function(e) {
-        e.preventDefault(); // prevent hard jump, the default behavior
-
-        var target = $(this).attr("href"); // Set the target as variable
-
-        // perform animated scrolling by getting top-position of target-element and set it as scroll target
-        $('.content').stop().animate({
-                scrollTop: $(target).offset().top
-        }, 600, function() {
-                location.hash = target; //attach the hash (#jumptarget) to the pageurl
-        });
-
-        return false;
-    });
-});
-
-$(".content").scroll(function() {
-    var scrollDistance = $(".content").scrollTop();
-    console.log(scrollDistance);
-    
-    $('.fullBlock').each(function(i) {
-        if ($(this).position().top <= scrollDistance) {
-            $('.menu a.active').removeClass('active');
-            $('.tabs a.active').removeClass('active');
-            $('.menu a').eq(i).addClass('active');
-            $('.tabs a').eq(i).addClass('active');
+	// $('.content').fullpage({
+	// 	//sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+	// 	anchors: ['home', 'about', 'expert', 'portfolio', 'talk'],
+	// 	menu: '.nav',
+	// 	scrollingSpeed: 1000
+	// });
+	//each object is by using one.top, two.top, or whatever you name your variables
+	var home_ht = $("#home").offset();
+	var about_ht = $("#about").offset();
+	var expert_ht = $("#expert").offset();
+	var portfolio_ht = $("#portfolio").offset();
+	var talk_ht = $("#talk").offset();
+	$('.nav a').click(function(){
+	    $('.nav a').removeClass("active");
+	    $(this).addClass("active");
+	    $('.content').scroll();
+	});
+    $('.content').scroll(function(){
+        var screenPosition = $(".content").scrollTop();
+        if (screenPosition < about_ht) {
+        	console.log("1");
+            $('.nav a').removeClass("active");
+	    	$('.nav a:first-child').addClass("active");
+        }
+        if (screenPosition >= about_ht) {
+        	console.log("2");
+            $('.nav a').removeClass("active");
+	    	$('.nav a:nth-child(2)').addClass("active");
+        }
+        if (screenPosition >= expert_ht) {
+        	console.log("3");
+            $('.nav a').removeClass("active");
+	    	$('.nav a:nth-child(3)').addClass("active");
+        }
+        if (screenPosition >= portfolio_ht) {
+        	console.log("4");
+            $('.nav a').removeClass("active");
+	    	$('.nav a:nth-child(4)').addClass("active");
+        }
+        if (screenPosition >= talk_ht) {
+        	console.log("5");
+            $('.nav a').removeClass("active");
+	    	$('.nav a:nth-child(5)').addClass("active");
         }
     });
-}).scroll();
+       
+
+});
 </script>
 </html>

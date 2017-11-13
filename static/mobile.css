@@ -38,9 +38,7 @@
 	section.content{
 		width:100%;
 		margin:auto;
-		overflow: hidden;
-		overflow-y:auto;
-		height: calc(100% - 63px);
+		height: calc(100% - 63px) !important;
 	}
 	.about{
 	  margin:auto;
@@ -74,7 +72,7 @@
 	}
 	.tabs li {
 	    display: inline-block;
-	    width: calc(20% - 5px);
+	    width: calc(20% - 3.5px);
 	    text-align: center;
 	    margin: auto;
 	    padding: 20px;
