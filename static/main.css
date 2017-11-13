@@ -97,15 +97,21 @@ a{
 	border-color:#000;
 }
 .table {
-    display: inline-block;
+  width:100%;
+  display: table;
+  table-layout: fixed;
+}
+.table-row{
+  width: 100%;
+  display: table-row;
 }
 .table .table-cell {
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  position: relative;
+    /*top: 50%;
+    transform: translateY(-50%);*/
 }
 .red-shadow{
 	text-shadow: 2px 2px 0px #800;
@@ -354,7 +360,6 @@ section.sidebar p.footer span{
   position: absolute;
   top: 45%;
   width: 100%;
-  left: 10px;
 }
 .owl-prev, .owl-next {
   position: absolute;
@@ -534,18 +539,17 @@ section.sidebar p.footer span{
 
 
 .port {
-  display:inline-block;
-  position: relative;
-  overflow: hidden;
-  min-width: 300px;
-  max-width: 315px;
-  max-height: 220px;
-  width: calc(25% - 2rem);
-  margin: 1rem;
-  color: #000000;
-  text-align: right;
-  font-size: 16px;
-  background-color: #000000;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    min-width: 300px;
+    max-height: 220px;
+    width: 100%;
+    margin: 20px auto;
+    color: #000000;
+    text-align: right;
+    font-size: 16px;
+    background-color: #000000;
 }
 .port * {
   -webkit-box-sizing: border-box;

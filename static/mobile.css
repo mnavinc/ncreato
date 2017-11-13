@@ -94,20 +94,17 @@
 	.tabs li span{
 		display:none;
 	}
-	.skillset,.gallery{
-	  width: 100%;
-	  margin: 0 auto;
-	}
-	/*.owl-nav {
-	  position: absolute;
+	.owl-nav {
 	  top: 38%;
-	  width: 100%;
-	  left: 0px;
+	  display:block;
 	}
 	.owl-prev{
-	  left:0px;
+	  left:-10px;
 	}
 	.owl-next{
-	  right:0px;
-	}*/
+	  right:-10px;
+	}
+	.owl-nav div.disabled {
+	    background-color:#dadada;
+	}
 }
