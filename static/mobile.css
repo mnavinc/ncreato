@@ -107,4 +107,14 @@
 	.owl-nav div.disabled {
 	    background-color:#dadada;
 	}
+	[draggable=true] {
+	    cursor: move;
+	}
+
+	.resizable {
+	    overflow: scroll;
+	    resize: both;
+	    max-width: 300px;
+	    max-height: 460px;
+	}
 }
