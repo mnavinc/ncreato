@@ -23,13 +23,13 @@ body{
   transform-style: preserve-3d;
   transform:translateZ(0);
 	/*background: linear-gradient(-45deg, #D2D3D5, #E2E3E5, #F2F3F5);*/
-  /*background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);*/
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
       /*background: #403B4A;
       background: -webkit-linear-gradient(45deg, #E7E9BB, #403B4A); 
       background: linear-gradient(45deg, #E7E9BB, #403B4A);*/
-  background: #D3CCE3;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(45deg, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45deg, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*background: #D3CCE3;
+  background: -webkit-linear-gradient(45deg, #E9E4F0, #D3CCE3);
+  background: linear-gradient(45deg, #E9E4F0, #D3CCE3);*/
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
