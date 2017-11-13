@@ -572,6 +572,7 @@ section.sidebar p.footer span{
   width: 40%;
   -webkit-transform: translateX(150%);
   transform: translateX(150%);
+  outline:0;
 }
 .port figcaption:before {
   position: absolute;
@@ -585,6 +586,7 @@ section.sidebar p.footer span{
   border-style: solid;
   border-width: 120px 120px 120px 0;
   border-color: transparent #ffffff transparent transparent;
+  outline:none;
 }
 .port:after {
   position: absolute;
@@ -600,6 +602,7 @@ section.sidebar p.footer span{
   transform: translateY(-50%);
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
+  outline:0;
 }
 .port h3,
 .port p {
@@ -651,6 +654,7 @@ section.sidebar p.footer span{
   -webkit-transform: translateX(0);
   transform: translateX(0);
   opacity: 1;
+  outline:0;
 }
 
 .about{
