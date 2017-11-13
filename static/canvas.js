@@ -12,6 +12,8 @@ var ctx = canvas.getContext('2d');
 
 //possible characters that will appear
 var characterList = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+//var characterList = ['0', '1', '01', '10', '111', '000', '100', '110', '101', '011', '010', '001', '1111', '0000', '1000', '0100', '0010', '0001', '1100', '0011', '0111', '1110', '1011', '1101', '0010', '0110'];
+//var characterList = ['html', 'css', 'js', 'jQuery', 'github', 'git', 'angularjs', 'canvas', 'python', 'ionic', 'reactjs', 'bitbucket', 'wireframe', 'prototype', 'linux', 'web', 'app', 'mobile', 'ios', 'andoid', 'UI', 'UX', 'sketch', 'Figma', 'Adobe', 'Electron'];
 
 //stocks possible character attributes
 var layers = {
@@ -20,7 +22,7 @@ var layers = {
     coef: [0.1, 0.2, 0.4, 0.6, 0.8], //how much the letters move from the mouse (starting from the deepest layer)
     size: [16, 22, 36, 40, 46], //font size of the letters (starting from the deepest layer)
     color: ['#ddd', '#ccc', '#bbb', '#aaa'], //color of the letters (starting from the deepest layer)
-    font: 'Courier' //font family (of every layer)
+    //font: 'Courier' //font family (of every layer)
 };
 
 /*End of options*/

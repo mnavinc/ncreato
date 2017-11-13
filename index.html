@@ -43,10 +43,15 @@
 	<canvas></canvas>
 	<main class="wrapper">
 			<section class="sidebar">
-				<div class="avatar">
-				  <a href="#home"><img src="static/images/logo4.jpg" alt="Frontend Engineer"></a>
-				</div>
+				<!-- <div class="avatar">
+				  <a><img src="static/images/logo4.jpg" alt="Frontend Engineer"></a>
+				</div> -->
 				<ul class="menu">
+					<a href="#home"><li>
+						<div class="avatar">
+						  <img src="static/images/logo4.jpg" alt="Frontend Engineer">
+						</div>
+					</li></a>
 					<a href="#about"><li><i class="fa fa-lg fa-user-circle"></i>&nbsp;About</li></a>
 					<a href="#expert"><li><i class="fa fa-lg fa-tasks"></i>&nbsp;Expertise</li></a>
 					<a href="#portfolio"><li><i class="fa fa-lg fa-briefcase"></i>&nbsp;Portfolio</li></a>
@@ -78,7 +83,7 @@
 									<img src="static/images/logo2.jpg" alt="ncreato">
 								</div>
 								<div class="info">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum libero in tellus imperdiet auctor. Suspendisse vitae consequat tellus. Vivamus condimentum aliquam lectus id porttitor. Sed venenatis est ligula. Pellentesque sollicitudin libero at eros aliquam tristique. Nunc varius quam at purus accumsan consequat. Duis dapibus sapien quis accumsan aliquam. Donec gravida, velit in varius pellentesque, enim risus posuere velit, non finibus metus augue nec nisl. Praesent efficitur erat quis nulla consectetur consequat. Maecenas lacinia in odio eget rutrum. Quisque turpis magna, lobortis et mi sed, aliquet feugiat augue. Cras ullamcorper lectus in ex interdum elementum. Nulla iaculis pharetra metus, non commodo purus sagittis in.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum libero in tellus imperdiet auctor. Suspendisse vitae consequat tellus. Vivamus condimentum aliquam lectus id porttitor. Sed venenatis est ligula. Pellentesque sollicitudin libero at eros aliquam tristique. Nunc varius quam at purus accumsan consequat. Duis dapibus sapien quis accumsan aliquam. Donec gravida, velit in varius pellentesque, enim risus posuere velit, non finibus metus augue nec nisl.</p>
 								</div>
 							</div>
 						</div>
@@ -240,32 +245,62 @@
 					<div class="table-row">
 						<div class="table-cell">
 							<h1 class="title">LETS TALK</h1>
-							<div class="console">
-								<p class="help"><i class="fa fa-lg fa-info-circle"></i> Use "help" to show sample questions.</p>
-						        <div id="out">
-						        </div>
-						        <form class="output">
-						            <input type="text" id="in" placeholder="Type your command:" list="commandList"/>
-						            <datalist id="commandList">
-						                <select>
-						                    <option value="name" />
-						                    <option value="where do you work" />
-						                    <option value="current ctc" />
-						                    <option value="expected ctc" />
-						                    <option value="notice period" />
-						                    <option value="location" />
-						                    <option value="experience" />
-						                    <option value="resume" />
-						                </select>
-						            </datalist>
-						        </form>
+							<div class="col">
+								<!-- <div class="talkBlock console">
+									<p class="help"><i class="fa fa-lg fa-info-circle"></i> Use "help" to show sample questions.</p>
+							        <div id="out">
+							        </div>
+							        <form class="output">
+							            <input type="text" id="in" placeholder="Ask me any question" list="commandList"/>
+							            <datalist id="commandList">
+							                <select>
+							                    <option value="name" />
+							                    <option value="where do you work" />
+							                    <option value="current ctc" />
+							                    <option value="expected ctc" />
+							                    <option value="notice period" />
+							                    <option value="location" />
+							                    <option value="experience" />
+							                    <option value="resume" />
+							                </select>
+							            </datalist>
+							        </form>
+								</div> -->
+								<div class="talkblock">
+									<h4 class="f-light">Want to hire me? Click <a class="f-bold" href="mailto:mnavinc@hotmail.com?Subject=Hello" target="_top">here</a> to inbox me.</h4>
+									<p>Follow me on:</p>
+									<ul>
+										<a href="https://github.com/mnavinc" target="_blank"><li title="Github"><i class="fa fa-lg fa-github"></i></li></a>
+
+										<a href="https://angel.co/naveen-chakravarthy-madeti" target="_blank"><li title="Angellist"><i class="fa fa-lg fa-angellist"></i></li></a>
+
+										<!-- <a href="https://codepen.io/mnavinc/" target="_blank"><li title="codepen"><i class="fa fa-lg fa-codepen"></i></li></a> -->
+
+										<a href="https://www.linkedin.com/in/naveen-chakravarthy-madeti-32a26b3a/" target="_blank"><li title="LinkedIn"><i class="fa fa-lg fa-linkedin"></i></li></a>
+
+										<a href="tg://resolve?domain=ncreato" target="blank"><li title="Telegram"><i class="fa fa-lg fa-telegram"></i></li></a>
+
+										<a href="https://dribbble.com/ncreato" target="_blank"><li title="Dribbble"><i class="fa fa-lg fa-dribbble"></i></li></a>
+
+										<a href="https://www.facebook.com/ncreato" target="_blank"><li title="Facebook"><i class="fa fa-lg fa-facebook"></i></li></a>
+
+										<a href="https://twitter.com/ncreato" target="_blank"><li title="Twitter"><i class="fa fa-lg fa-twitter"></i></li></a>
+
+										<a href="https://www.instagram.com/ncreato/" target="_blank"><li title="Instagram"><i class="fa fa-lg fa-instagram"></i></li></a>
+
+										<!-- <a href="#"><li><i class="fa fa-lg fa-skype"></i></li></a>
+										<a href="#"><li><i class="fa fa-lg fa-slack"></i></li></a>
+										<a href="#"><li><i class="fa fa-lg fa-stack-overflow"></i></li></a>
+										<a href="#"><li><i class="fa fa-lg fa-jsfiddle"></i></li></a> -->
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 			<ul class="tabs mob">
-				<a href="#home"><li class="active"><i class="fa fa-lg fa-home"></i>&nbsp;<span>Home</span></li></a>
+				<a href="#home"><li><i class="fa fa-lg fa-home"></i>&nbsp;<span>Home</span></li></a>
 				<a href="#about"><li><i class="fa fa-lg fa-user"></i>&nbsp;<span>About</span></li></a>
 				<a href="#expert"><li><i class="fa fa-lg fa-tasks"></i>&nbsp;<span>Expertise</span></li></a>
 				<a href="#portfolio"><li><i class="fa fa-lg fa-briefcase"></i>&nbsp;<span>Portfolio</span></li></a>
@@ -275,8 +310,8 @@
 </body>
 <script type="text/javascript" src="static/canvas.js"></script>
 <script src="static/owl.carousel.min.js"></script>
-<script type="text/javascript" type="text/javascript" src="http://yui.yahooapis.com/combo?3.5.0/build/yui/yui-min.js"></script>
-<script type="text/javascript" src="static/console.js"></script>
+<!-- <script type="text/javascript" type="text/javascript" src="http://yui.yahooapis.com/combo?3.5.0/build/yui/yui-min.js"></script>
+<script type="text/javascript" src="static/console.js"></script> -->
 <script>
 $('.owl-carousel').owlCarousel({
 	//stagePadding: 10,
@@ -298,6 +333,36 @@ $('.owl-carousel').owlCarousel({
         }
     },
     navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
-})
+});
+$(document).ready(function() {
+    $('a[href*=\\#]:not([href=\\#])').bind('click', function(e) {
+        e.preventDefault(); // prevent hard jump, the default behavior
+
+        var target = $(this).attr("href"); // Set the target as variable
+
+        // perform animated scrolling by getting top-position of target-element and set it as scroll target
+        $('.content').stop().animate({
+                scrollTop: $(target).offset().top
+        }, 600, function() {
+                location.hash = target; //attach the hash (#jumptarget) to the pageurl
+        });
+
+        return false;
+    });
+});
+
+$(".content").scroll(function() {
+    var scrollDistance = $(".content").scrollTop();
+    console.log(scrollDistance);
+    
+    $('.fullBlock').each(function(i) {
+            if ($(this).position().top <= scrollDistance) {
+                    $('.menu a.active').removeClass('active');
+                    $('.menu a').eq(i).addClass('active');
+                    $('ul.tabs a.active').removeClass('active');
+                    $('ul.tabs a').eq(i).addClass('active');
+            }
+    });
+}).scroll();
 </script>
 </html>

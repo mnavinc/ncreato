@@ -265,20 +265,18 @@ section.content {
   z-index: 2;
   box-shadow:0px 0px 20px rgba(0,0,0,0.5);
 }
-section.sidebar ul{
-  padding:40px;
-}
-section.sidebar ul li{
-  display:block;
-  list-style:none;
-  padding:20px 0px;
-  text-align:left;
-  font-size:1.5vw;
-  border-bottom:1px solid #102228;
-  cursor:pointer;
-  transition:all 0.5s ease;
-  text-indent:50px;
-  position:relative;
+section.sidebar ul li {
+    display: block;
+    list-style: none;
+    padding: 20px 0px;
+    text-align: left;
+    font-size: 1.5vw;
+    border-bottom: 1px solid #102228;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    text-indent: 50px;
+    position: relative;
+    margin: auto 40px;
 }
 section.sidebar ul li i {
     position: absolute;
@@ -289,7 +287,22 @@ section.sidebar ul li i {
     transform: translateY(-50%);
     font-size: 100%;
 }
-section.sidebar ul li:hover{
+section.sidebar ul a:first-child li,
+section.sidebar ul a.active:first-child li {
+    padding: 0;
+    text-indent: 0;
+    margin: auto;
+    margin-bottom: 40px;
+    border-bottom:0;
+    background:transparent;
+}
+section.sidebar ul li:hover
+section.sidebar ul a.active li{
+  background-color:#102228;
+  color:#FFF;
+  text-indent:60px;
+}
+.menu a.active li{
   background-color:#102228;
   color:#FFF;
   text-indent:60px;
@@ -662,9 +675,12 @@ section.sidebar p.footer span{
 }
 
 .about{
-  width:80%;
+  width:90%;
   margin:auto;
-  padding:40px 0;
+  padding:40px;
+  background-color: rgba(16, 34, 40, 0.9);
+  color: #FFF;
+  min-height:272px;
 }
 .about .myPic {
     width: 200px;
@@ -684,7 +700,7 @@ section.sidebar p.footer span{
 .myPic::before,
 .myPic::after {
   animation: pulse 2s linear infinite;
-  border: #102228 solid 8px;
+  border: #FFF solid 8px;
   border-radius: 9999px;
   box-sizing: border-box;
   content: ' ';
@@ -721,9 +737,8 @@ section.sidebar p.footer span{
     color:#FFF;
     text-align:left;
     /*background-color:rgba(255, 255, 255, 0.5);*/
-    background-color:#102228;
+    background-color: rgba(16, 34, 40, 0.9);
     padding:20px;
-    border-radius:10px;
 }
 .console form.output{
     position: absolute;
@@ -739,7 +754,6 @@ section.sidebar p.footer span{
     background: transparent;
     border: 1px solid #FFF;
     color: #FFF;
-    border-radius:10px;
 }
 .console form.output input:focus{
   outline:none;
@@ -767,3 +781,46 @@ h1.title{
   width:60%;
   margin:auto;
 }
+
+.talkblock ul{
+  width:80%;
+  display:block;
+  text-align:center;
+  justify-content:center;
+  margin:auto;
+}
+.talkblock ul li{
+  display:inline-block;
+  text-align:center;
+  margin:auto;
+  padding:10px;
+  background-color:#102228;
+  color:#FFF;
+  width:40px;
+  height:40px;
+  transition:all 0.3s ease;
+}
+.talkblock ul li:hover{
+  background-color:#FFF;
+  color:#102228;
+  border-radius:3px;
+  box-shadow:0px 0px 5px #102228;
+}
+.talkblock h4{
+    background-color: rgba(16, 34, 40, 0.9);
+    color: #FFF;
+    padding: 20px;
+    margin: 40px;
+}
+.talkblock h4 a{
+    text-decoration: underline;
+    opacity:0.75;
+}
+.talkblock h4 a:hover{
+  opacity:0.5;
+}
+.talkblock p {
+    margin: 5px;
+    font-weight: 900;
+}
+
