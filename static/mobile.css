@@ -123,4 +123,14 @@
 	    z-index:99;
 	    box-shadow: 0px 0px 12px #333;
 	}
+	h1.title i.fa {
+	    position: absolute;
+	    left: 0;
+	    display: inline-block;
+	    padding: 0 25px;
+	    border-right: 1px solid #102228;
+	    height: 100%;
+	    top: 0;
+	    line-height: 2;
+	}
 }
