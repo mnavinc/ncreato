@@ -44,6 +44,7 @@
 	  margin:auto;
 	  padding: 20px 20px 0;
 	  width: 100%;
+	  text-align:center
 	}
 	.about .myPic {
 	    clear: both;
@@ -55,7 +56,13 @@
 	    float: none;
 	    width: 100%;
 	    padding: 10px;
-	    margin: 30px auto;
+		margin: 30px auto;
+		text-align:center
+	}
+	h3.content {
+		text-align: center;
+		font-size: 14px;
+		line-height: 1.5;
 	}
 	.port {
 	    margin: 0.5rem;
@@ -124,7 +131,8 @@
 	.talkblock h4{
 	    font-size:5vw;	
 	    width:80%;
-	    margin:20px auto;
+		margin:20px auto;
+		text-align: center;
 	}
 	.talkblock p,
 	.talkblock ul {
