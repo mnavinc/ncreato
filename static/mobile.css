@@ -106,14 +106,16 @@
 	    box-shadow: none;
 	}
 	h1.title {
-	    width: 90%;
-    	position: relative;
-    	top: 0;
-    	left: 0;
-    	margin: auto;
-    	padding: 15px;
-    	z-index: 99;
-    	text-shadow: 2px 2px 5px #ccc;
+		width: 90%;
+		position: relative;
+		top: 0;
+		left: 0;
+		margin: auto;
+		padding: 15px;
+		z-index: 99;
+		text-shadow: 2px 2px 5px #ccc;
+		font-size: 10vw;
+		text-align:center
 	}
 	.talkblock ul a{
 		display:inline-block;
