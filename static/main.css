@@ -690,9 +690,10 @@ section.sidebar p.footer span{
   width:90%;
   margin:auto;
   padding:40px;
-  background-color: rgba(16, 34, 40, 0.9);
+  /* background-color: rgba(16, 34, 40, 0.9); */
   color: #FFF;
   min-height:272px;
+  text-align:right
 }
 .about .myPic {
     width: 200px;
@@ -731,12 +732,15 @@ section.sidebar p.footer span{
 .about .info{
     width: calc(100% - 340px);
     display: inline-block;
-    text-align: left;
+    text-align: right;
     vertical-align: middle;
 }
 .about .info p {
     font-size: 21px;
     line-height: 1.5;
+}
+#about .info p i{
+  font-weight:900;
 }
 
 .console{
@@ -793,21 +797,27 @@ h1.title{
   margin: 40px auto;
   text-align: right;
   font-size: 600%;
-  color:#fff
+  color:#fff;
+  margin-bottom: 0;
 }
 h3.content{
-  font-size: 1.2em;
   text-align: right;
   width: 90%;
   padding: 20px;
   margin: auto;
-  background-color: #fff;
-  color: #102228;
-  font-style:italic
+  /* background-color: #fff; */
+  color: #fff;
+  font-size: 21px;
+  line-height: 1.5;
 }
 /* .fa{
   color:#102228
 } */
+
+.talkblock{
+  width:90%;
+  margin:auto
+}
 .talkblock .fa{
   color:#fff
 }
@@ -815,7 +825,7 @@ h3.content{
   color:#102228
 }
 .talkblock ul{
-  width:90%;
+  width:100%;
   display:block;
   text-align:right;
   justify-content:center;
@@ -839,12 +849,12 @@ h3.content{
   box-shadow:0px 0px 5px #102228;
 }
 .talkblock h4 {
-  background-color: rgba(16, 34, 40, 0.9);
+  /* background-color: rgba(16, 34, 40, 0.9); */
   color: #FFF;
-  padding: 20px;
+  padding: 20px 0;
   margin: 0 auto;
   text-align: right;
-  width: 90%;
+  width: 100%;
 }
 .talkblock h4 a{
     text-decoration: underline;
@@ -854,7 +864,7 @@ h3.content{
   opacity:0.5;
 }
 .talkblock p {
-  margin: 10px 5%;
+  margin: 10px auto;
   font-weight: 900;
   text-align: right;
   color: #fff;
